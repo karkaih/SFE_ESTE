@@ -9,8 +9,9 @@ const Nav = ()=>
             <div className="container">
      <a href="#" className="logo"> logo </a>
             <ul>
-            <a href="/">5 days Essaouira</a>
+            <a href="/">7 days Essaouira</a>
             <a href="/search">search</a>
+            <a href="/hourly">Hourly Essaouira</a>
             </ul>
             </div>
         </div>

@@ -2,18 +2,24 @@ import React,{useState} from 'react';
 import {BrowserRouter , Route, Switch} from 'react-router-dom' ;
 import Search from './Comp/Search';
 import weatherEssa from './Comp/weatherEssa';
+import getHourly from './Comp/getHourly'
 import Nav from './Comp/navbar';
+
 //const api = {key : "4fb4a7ce04bfdac5a90209896600dfa9",
 //base :"https://api.openweathermap.org/data/2.5/"}
 
 function App() {
 return (
+ /* <Example/>*/
+  
 <BrowserRouter>
 <Nav/>
 <Route exact path="/search" component={Search}></Route>
-<Route exact path="/" component={weatherEssa}>
-</Route>
+<Route exact path="/" component={weatherEssa}></Route>
+
+<Route exact path="/hourly"component={getHourly}></Route>
 </BrowserRouter>
+
 );
 /*const [query,setQuery]=useState('');
 const [weather,setWeather]=useState({});
